@@ -124,7 +124,7 @@
                                                                                                   <block type="controls_repeat" id="579" inline="true">
                                                                                                     <value name="TIMES">
                                                                                                       <block type="math_number" id="586">
-                                                                                                        <field name="NUM">4</field>
+                                                                                                        <field name="NUM">3</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                     <statement name="DO">
@@ -133,7 +133,7 @@
                                                                                                           <block type="robot_delay" id="391" inline="true">
                                                                                                             <value name="DELAY">
                                                                                                               <block type="math_number" id="392">
-                                                                                                                <field name="NUM">5000</field>
+                                                                                                                <field name="NUM">2000</field>
                                                                                                               </block>
                                                                                                             </value>
                                                                                                             <next>
