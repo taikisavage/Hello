@@ -43,7 +43,7 @@
                                 <field name="TEXT">Done. Ready to drive!</field>
                                 <next>
                                   <block type="multimedia_playwav" id="791">
-                                    <field name="WAV">_start.w</field>
+                                    <field name="WAV">Virtual Riot - Energy Drink</field>
                                     <next>
                                       <block type="movement_stutter" id="297">
                                         <next>
