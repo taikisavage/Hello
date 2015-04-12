@@ -14,7 +14,20 @@
         </value>
         <next>
           <block type="oled_drawtext" id="97">
-            <field name="TEXT">HELLO WORLD</field>
+            <field name="TEXT">Starting car</field>
+            <next>
+              <block type="movement_stutter" id="107">
+                <next>
+                  <block type="robot_delay" id="118" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="125">
+                        <field name="NUM">7000</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
