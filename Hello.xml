@@ -286,9 +286,6 @@
                                                                                                                                                                                                 <field name="NUM">200</field>
                                                                                                                                                                                               </block>
                                                                                                                                                                                             </value>
-                                                                                                                                                                                            <next>
-                                                                                                                                                                                              <block type="oled_cleardisplay" id="393"></block>
-                                                                                                                                                                                            </next>
                                                                                                                                                                                           </block>
                                                                                                                                                                                         </next>
                                                                                                                                                                                       </block>
@@ -334,7 +331,11 @@
                                                                                                       </block>
                                                                                                     </statement>
                                                                                                     <next>
-                                                                                                      <block type="movement_stop" id="137"></block>
+                                                                                                      <block type="oled_cleardisplay" id="393">
+                                                                                                        <next>
+                                                                                                          <block type="movement_stop" id="137"></block>
+                                                                                                        </next>
+                                                                                                      </block>
                                                                                                     </next>
                                                                                                   </block>
                                                                                                 </next>
