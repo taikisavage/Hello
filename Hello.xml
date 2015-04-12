@@ -121,11 +121,10 @@
                                                                                               <block type="oled_drawtext" id="333">
                                                                                                 <field name="TEXT">ENGINE PROBLEM!!!</field>
                                                                                                 <next>
-                                                                                                  <block type="controls_whileUntil" id="515" inline="false">
-                                                                                                    <field name="MODE">UNTIL</field>
-                                                                                                    <value name="NUMBER">
-                                                                                                      <block type="sensor_button" id="572">
-                                                                                                        <field name="OBJECT">UP</field>
+                                                                                                  <block type="controls_repeat" id="579" inline="true">
+                                                                                                    <value name="TIMES">
+                                                                                                      <block type="math_number" id="586">
+                                                                                                        <field name="NUM">4</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                     <statement name="DO">
@@ -288,11 +287,7 @@
                                                                                                                                                                                               </block>
                                                                                                                                                                                             </value>
                                                                                                                                                                                             <next>
-                                                                                                                                                                                              <block type="oled_cleardisplay" id="393">
-                                                                                                                                                                                                <next>
-                                                                                                                                                                                                  <block type="movement_stop" id="137"></block>
-                                                                                                                                                                                                </next>
-                                                                                                                                                                                              </block>
+                                                                                                                                                                                              <block type="oled_cleardisplay" id="393"></block>
                                                                                                                                                                                             </next>
                                                                                                                                                                                           </block>
                                                                                                                                                                                         </next>
@@ -338,6 +333,9 @@
                                                                                                         </next>
                                                                                                       </block>
                                                                                                     </statement>
+                                                                                                    <next>
+                                                                                                      <block type="movement_stop" id="137"></block>
+                                                                                                    </next>
                                                                                                   </block>
                                                                                                 </next>
                                                                                               </block>
