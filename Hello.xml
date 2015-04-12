@@ -112,23 +112,23 @@
                                                                                       <block type="oled_drawtext" id="333">
                                                                                         <field name="TEXT">ENGINE PROBLEM!!!</field>
                                                                                         <next>
-                                                                                          <block type="movement_stutter" id="390">
-                                                                                            <next>
-                                                                                              <block type="robot_delay" id="391" inline="true">
-                                                                                                <value name="DELAY">
-                                                                                                  <block type="math_number" id="392">
-                                                                                                    <field name="NUM">5000</field>
-                                                                                                  </block>
-                                                                                                </value>
+                                                                                          <block type="controls_whileUntil" id="472" inline="false">
+                                                                                            <field name="MODE">UNTIL</field>
+                                                                                            <value name="NUMBER">
+                                                                                              <block type="sensor_button" id="480">
+                                                                                                <field name="OBJECT">ENTER</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <statement name="DO">
+                                                                                              <block type="movement_stutter" id="390">
                                                                                                 <next>
-                                                                                                  <block type="controls_whileUntil" id="472" inline="false">
-                                                                                                    <field name="MODE">UNTIL</field>
-                                                                                                    <value name="NUMBER">
-                                                                                                      <block type="sensor_button" id="480">
-                                                                                                        <field name="OBJECT">ENTER</field>
+                                                                                                  <block type="robot_delay" id="391" inline="true">
+                                                                                                    <value name="DELAY">
+                                                                                                      <block type="math_number" id="392">
+                                                                                                        <field name="NUM">5000</field>
                                                                                                       </block>
                                                                                                     </value>
-                                                                                                    <statement name="DO">
+                                                                                                    <next>
                                                                                                       <block type="led_select" id="403" inline="true">
                                                                                                         <field name="ACTION">ON</field>
                                                                                                         <value name="LED">
@@ -278,13 +278,6 @@
                                                                                                                                                                                         <field name="NUM">200</field>
                                                                                                                                                                                       </block>
                                                                                                                                                                                     </value>
-                                                                                                                                                                                    <next>
-                                                                                                                                                                                      <block type="oled_cleardisplay" id="393">
-                                                                                                                                                                                        <next>
-                                                                                                                                                                                          <block type="movement_stop" id="137"></block>
-                                                                                                                                                                                        </next>
-                                                                                                                                                                                      </block>
-                                                                                                                                                                                    </next>
                                                                                                                                                                                   </block>
                                                                                                                                                                                 </next>
                                                                                                                                                                               </block>
@@ -324,8 +317,15 @@
                                                                                                           </block>
                                                                                                         </next>
                                                                                                       </block>
-                                                                                                    </statement>
+                                                                                                    </next>
                                                                                                   </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </statement>
+                                                                                            <next>
+                                                                                              <block type="oled_cleardisplay" id="393">
+                                                                                                <next>
+                                                                                                  <block type="movement_stop" id="137"></block>
                                                                                                 </next>
                                                                                               </block>
                                                                                             </next>
